@@ -9,12 +9,14 @@ ECIES is implemented as a separate module and you must add it to your dependenci
 For node projects:
 
 ```bash
+npm install bitcore-lib --save
 npm install bitcore-ecies --save
 ```
 
 For client-side projects:
 
 ```bash
+bower install bitcore-lib --save
 bower install bitcore-ecies --save
 ```
 
