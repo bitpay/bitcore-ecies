@@ -30,11 +30,11 @@ var bobPrivateKey = new bitcore.PrivateKey();
 var data = new Buffer('The is a raw data example');
 
 // Encrypt data
-var cypher1 = ECIES.privateKey(alicePrivateKey).publicKey(bobPrivateKey.publicKey);
+var cypher1 = ECIES().privateKey(alicePrivateKey).publicKey(bobPrivateKey.publicKey);
 var encrypted = cypher1.encrypt(data);
 
 // Decrypt data
-var cypher2 = ECIES.privateKey(bobPrivateKey).publicKey(alicePrivateKey.publicKey);
+var cypher2 = ECIES().privateKey(bobPrivateKey).publicKey(alicePrivateKey.publicKey);
 var decrypted = cypher2.decrypt(encrypted);
 
 assert(data.toString(), decrypted.toString());
