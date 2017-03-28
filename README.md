@@ -1,5 +1,4 @@
-<img src="http://bitcore.io/css/images/module-ecies.png" alt="bitcore ecies" height="35">
-# ECIES for bitcore
+# ECIES for Bitcore
 
 [![NPM Package](https://img.shields.io/npm/v/bitcore-ecies.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-ecies)
 [![Build Status](https://img.shields.io/travis/bitpay/bitcore-ecies.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-ecies)
@@ -12,6 +11,16 @@ See [the main bitcore repo](https://github.com/bitpay/bitcore) or the [bitcore g
 Credit to [@ryanxcharles][ryan] for the original implementation.
 
 ## Getting started
+
+```sh
+npm install bitcore-lib
+npm install bitcore-ecies
+```
+
+```sh
+bower install bitcore-lib
+bower install bitcore-ecies
+```
 
 ECIES will allow to securely encrypt and decrypt messages using ECDSA key pairs (bitcoin cryptography).
 
